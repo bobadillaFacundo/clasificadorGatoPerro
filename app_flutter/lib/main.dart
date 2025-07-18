@@ -53,7 +53,7 @@ class _ClassifierHomePageState extends State<ClassifierHomePage> {
   Future<void> _loadModel() async {
     try {
       // Cargar el modelo directamente desde assets usando bytes
-      final modelData = await rootBundle.load('assets/model.tflite');
+      final modelData = await rootBundle.load('assets/models/model.tflite');
       _interpreter = await Interpreter.fromBuffer(modelData.buffer.asUint8List());
     } catch (e) {
       setState(() {

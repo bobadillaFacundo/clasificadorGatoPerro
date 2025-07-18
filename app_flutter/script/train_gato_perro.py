@@ -10,8 +10,8 @@ import seaborn as sns
 
 # Configuración
 IMG_SIZE = 224
-BATCH_SIZE = 128
-EPOCHS = 20
+BATCH_SIZE = 64
+EPOCHS = 10
 DATASET_DIR = '../dataset'
 MODEL_OUT = 'model.tflite'
 
